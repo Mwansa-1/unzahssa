@@ -5,8 +5,8 @@ echo "Building the project....."
 pip install -r requirements.txt
 
 echo "Make migrations...."
-python manage.py makemigrations --noinput
-python manage.py migrate --noinput
+python manage.py makemigrations 
+python manage.py migrate
 
 echo "Collect static files...."
-python manage.py collectstatic --noinput --clear
+python manage.py collectstatic
